@@ -54,7 +54,7 @@ export default function HomePage() {
 
       <main id="top">
         {/* Hero */}
-        <section className="relative flex min-h-screen w-full items-center overflow-hidden px-6 pt-24">
+        <section className="relative flex min-h-screen w-full items-center overflow-hidden px-6 pt-36">
           <div className="glow-orb -top-10 -left-10 h-72 w-72" />
           <div className="glow-orb bottom-0 right-0 h-96 w-96" style={{ animationDelay: "1.5s" }} />
           <div className="pulse-ring left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2" />
@@ -65,7 +65,7 @@ export default function HomePage() {
 
           <div className="fade-up relative mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-[color:var(--muted)]">
-              AI SaaS · Digital Products · Custom Software
+              Temporary page · full site under construction
             </span>
 
             <h1 className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
@@ -76,6 +76,11 @@ export default function HomePage() {
               Waveseed is a technology company building AI-powered SaaS, digital products, and custom
               software. It&apos;s also the parent brand behind a growing family of products, all built
               and shipped by the same team.
+            </p>
+
+            <p className="mx-auto mt-3 max-w-xl text-sm text-[color:var(--muted)]">
+              This page is a preview while the full site is being built — nothing to go looking for
+              elsewhere, everything will land right here.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
