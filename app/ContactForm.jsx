@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const initialState = { name: "", email: "", message: "", company: "" };
+const initialState = { name: "", email: "", phone: "", message: "", company: "" };
 
 export default function ContactForm() {
   const [values, setValues] = useState(initialState);
@@ -74,6 +74,19 @@ export default function ContactForm() {
           required
           autoComplete="email"
           value={values.email}
+          onChange={handleChange}
+          className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-[color:var(--text)] outline-none transition focus:border-[color:var(--accent-1)] focus:ring-2 focus:ring-[color:var(--accent-1)]/40"
+        />
+      </label>
+
+      <label className="grid gap-1.5 text-sm text-[color:var(--muted)]">
+        Phone number
+        <input
+          type="tel"
+          name="phone"
+          required
+          autoComplete="tel"
+          value={values.phone}
           onChange={handleChange}
           className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-[color:var(--text)] outline-none transition focus:border-[color:var(--accent-1)] focus:ring-2 focus:ring-[color:var(--accent-1)]/40"
         />
