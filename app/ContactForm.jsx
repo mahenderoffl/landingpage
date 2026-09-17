@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const initialState = { name: "", email: "", message: "", company: "" };
 
-export default function LeadForm() {
+export default function ContactForm() {
   const [values, setValues] = useState(initialState);
   const [status, setStatus] = useState({ state: "idle", message: "" });
 
@@ -40,7 +40,7 @@ export default function LeadForm() {
   const sending = status.state === "sending";
 
   return (
-    <form onSubmit={handleSubmit} className="mt-8 grid gap-4" noValidate>
+    <form onSubmit={handleSubmit} className="grid gap-4" noValidate>
       {/* Honeypot field — hidden from real users, catches simple bots */}
       <input
         type="text"
@@ -80,7 +80,7 @@ export default function LeadForm() {
       </label>
 
       <label className="grid gap-1.5 text-sm text-[color:var(--muted)]">
-        What brings you here?
+        Tell us about the project
         <textarea
           name="message"
           rows={4}
@@ -95,7 +95,7 @@ export default function LeadForm() {
         disabled={sending}
         className="mt-1 rounded-xl bg-gradient-to-r from-[color:var(--accent-1)] to-[color:var(--accent-2)] px-5 py-3 font-semibold text-[#100c29] transition disabled:cursor-wait disabled:opacity-70 hover:opacity-90"
       >
-        {sending ? "Sending..." : "Reach out"}
+        {sending ? "Sending..." : "Send message"}
       </button>
 
       <p

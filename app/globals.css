@@ -19,12 +19,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   color: var(--text);
   background: radial-gradient(circle at 20% 10%, var(--bg-2), var(--bg-1) 45%, var(--bg-3) 100%);
   background-attachment: fixed;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 @keyframes glow-pulse {
@@ -60,4 +65,28 @@ body {
 
 .fade-up {
   animation: fade-up 0.7s ease both;
+}
+
+/* Cursor ripple trail */
+.cursor-ripple {
+  position: fixed;
+  pointer-events: none;
+  z-index: 60;
+}
+
+.ripple-ring {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px solid;
+  border-radius: 9999px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple-expand 1.5s ease-out forwards;
+}
+
+@keyframes ripple-expand {
+  0% { width: 60px; height: 60px; opacity: 0.8; }
+  100% { width: 180px; height: 180px; opacity: 0; }
 }
