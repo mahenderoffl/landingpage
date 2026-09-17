@@ -10,8 +10,8 @@ export default function Footer() {
     <footer className="relative border-t border-white/5 px-6 py-12">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <a href="#top" className="text-lg font-bold tracking-tight">
-            wave<span className="text-[color:var(--accent-1)]">seed</span>
+          <a href="#top" className="inline-flex items-center">
+            <img src="/waveseed-logo-white.png" alt="Waveseed" className="h-16 w-16" />
           </a>
           <p className="mt-2 max-w-xs text-sm text-[color:var(--muted)]">
             Building AI-powered SaaS, digital products, and custom software.
