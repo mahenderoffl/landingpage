@@ -20,6 +20,7 @@ export default function LeadsTable({ leads }) {
           <tr>
             <th className="px-4 py-3">Name</th>
             <th className="px-4 py-3">Email</th>
+            <th className="px-4 py-3">Phone</th>
             <th className="px-4 py-3">Message</th>
             <th className="px-4 py-3">Received</th>
           </tr>
@@ -32,6 +33,15 @@ export default function LeadsTable({ leads }) {
                 <a href={`mailto:${lead.email}`} className="hover:text-[color:var(--text)]">
                   {lead.email}
                 </a>
+              </td>
+              <td className="px-4 py-3 whitespace-nowrap text-[color:var(--muted)]">
+                {lead.phone ? (
+                  <a href={`tel:${lead.phone}`} className="hover:text-[color:var(--text)]">
+                    {lead.phone}
+                  </a>
+                ) : (
+                  "—"
+                )}
               </td>
               <td className="px-4 py-3 max-w-md whitespace-pre-wrap text-[color:var(--muted)]">{lead.message}</td>
               <td className="px-4 py-3 whitespace-nowrap text-[color:var(--muted)]">{formatDate(lead.created_at)}</td>
