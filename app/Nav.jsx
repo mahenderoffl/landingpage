@@ -20,8 +20,12 @@ export default function Nav() {
 
       <header className="w-full border-b border-white/5 bg-[#100c29]/70 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="#top" className="text-lg font-bold tracking-tight">
-            wave<span className="text-[color:var(--accent-1)]">seed</span>
+          <a href="#top" className="flex items-center">
+            <img
+              src="/waveseed-logo-white.png"
+              alt="Waveseed"
+              className="h-12 w-12 sm:h-14 sm:w-14"
+            />
           </a>
 
           <nav className="hidden gap-8 text-sm text-[color:var(--muted)] sm:flex">
