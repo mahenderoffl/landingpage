@@ -6,7 +6,7 @@ import LogoutButton from "./LogoutButton";
 import LeadsTable from "./LeadsTable";
 
 export const metadata = {
-  title: "Admin — waveseed.co",
+  title: "Admin — Waveseed",
 };
 
 export const dynamic = "force-dynamic";

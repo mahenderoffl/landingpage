@@ -1,5 +1,6 @@
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import CursorTrail from "./CursorTrail";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -8,14 +9,18 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "waveseed.co — launching soon",
-  description: "waveseed.co is taking shape. Reach out and we'll be in touch.",
+  title: "Waveseed — AI SaaS, digital products & custom software",
+  description:
+    "Waveseed builds AI-powered SaaS, digital products, and custom software — the parent brand behind a growing family of products.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={dmSans.variable}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <CursorTrail />
+        {children}
+      </body>
     </html>
   );
 }

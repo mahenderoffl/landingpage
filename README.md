@@ -1,7 +1,8 @@
 # landingpage
 
-waveseed.co launch page — a lead capture form backed by a Turso (SQLite) database,
-plus a password-protected `/admin` page to review submitted leads.
+Waveseed marketing site — a full company site (hero, services, work, about, contact)
+with a contact form backed by a Turso (SQLite) database, plus a password-protected
+`/admin` page to review submitted leads.
 
 ## Stack
 
